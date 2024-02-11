@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All About AI</title>
+    <style>
+        /* Set the background color of the body to black */
+        body {
+            background-color: black;
+            color: green; /* Set text color to green for better contrast */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Use full viewport height */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 90%; /* Adjust as needed */
+            max-height: 80vh; /* Adjust as needed */
+            border: 2px solid white; /* Optional: adds a white border around the image */
+        }
+    </style>
+    <script>
+        // Refresh the page every 500 milliseconds
+        setTimeout(function(){
+            window.location.reload(1);
+        }, 500);
+    </script>
+</head>
+<body>
+    <div>
+        {% if latest_image_name %}
+            <img src="{{ url_for('image', filename=latest_image_name) }}" alt="Latest Image">
+        {% else %}
+            <p>No images available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
