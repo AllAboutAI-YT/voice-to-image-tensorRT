@@ -2,4 +2,8 @@
 Voice-to-image Nvidia TensorRT
 
 1. Follow instruction to install SDXL Turbo TensorRT Here: https://huggingface.co/stabilityai/sdxl-turbo-tensorrt
-2. In genimg2.py
+2. git clone
+3. cd dir
+4. pip install -r requirements.txt
+5. In display2.py line 7 set save image folder
+6. run genimg2.py
