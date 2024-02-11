@@ -1,0 +1,5 @@
+argparse
+cudart
+torch
+pyaudio
+faster_whisper
